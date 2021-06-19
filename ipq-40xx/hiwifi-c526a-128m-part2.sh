@@ -61,6 +61,12 @@ CONFIG_PACKAGE_screen=y
 CONFIG_PACKAGE_autocore-arm=y
 EOF
 
+# Kernel build options
+cat >> .config <<EOF
+CONFIG_KERNEL_BUILD_DOMAIN="liuzhongh@github"
+CONFIG_KERNEL_BUILD_USER="liuzhongh"
+EOF
+
 # FFmpeg
 cat >> .config <<EOF
 CONFIG_PACKAGE_libopus=y
